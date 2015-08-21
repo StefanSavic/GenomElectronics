@@ -1,0 +1,192 @@
+
+.sc-player {
+ font-family:'Wallpoet';
+  background-color: rgba(0,0,0,0.5);
+  color: aqua;
+  font-size: 15px;
+  line-height: 1.4em;
+  -moz-box-shadow: 1px 1px 4px #333;
+  -webkit-box-shadow: 1px 1px 4px #333;
+  position: absolute;
+  left: 15%;
+  top:10%;
+  width: 1200px;
+  height: 700px;
+
+}
+
+.sc-player a {
+  text-decoration: none;
+  font-family:'Wallpoet';
+  color: aqua;
+
+}
+
+/* Artworks */
+
+.sc-player .sc-artwork-list{
+  
+  background-color: rgba(0,0,0,0.5);
+  
+  /*background: -moz-linear-gradient(left bottom, #EEEEEE 20px, #333333 350px) repeat scroll 0 0 transparent;*/
+  /*background: -webkit-gradient(linear, right top, left bottom, from(darkviolet), to(aqua));*/
+
+}
+
+/* scrubber */
+
+.sc-scrubber {
+  background-color: transparent;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border: 1px solid violet;
+} 
+
+
+.sc-scrubber .sc-time-span {
+  background-color: darkviolet;
+}
+
+.sc-volume-slider {
+  background-color: darkviolet;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+
+
+.sc-volume-slider .sc-volume-status{
+  background-color: black;
+  border-right: 1px solid darkviolet;
+  cursor: pointer;
+}
+
+
+.sc-scrubber .sc-waveform-container {
+  z-index: 800;
+  width: 100%;
+  position: absolute;
+}
+
+.sc-scrubber .sc-time-span img {
+  height: 30px;
+  width: 100%;
+  /*background: -moz-linear-gradient(top, black, #22B573 0px, #7decba 90%);
+  background: -webkit-gradient(linear, left top, left 90%, from(black), color-stop(0%, #22B573), to(#7decba));*/
+
+}
+
+.sc-scrubber .sc-buffer, .sc-scrubber .sc-played {
+  background-color: #333;
+  z-index: 1;
+  position: absolute;
+}
+
+.sc-scrubber .sc-played {
+  background-color: #22B573;
+  z-index: 799;
+}
+
+/* controls */
+
+.sc-player .sc-controls a {
+  color: transparent;
+  background: url('../css/sc-player-standard/img/play-green.png');
+}
+
+.sc-player .sc-controls a:hover {
+  background: url('../css/sc-player-standard/img/play-green-hover.png');
+}
+
+.sc-player .sc-controls a.sc-pause {
+  background: url('../css/sc-player-standard/img/play-green.png');
+}
+
+.sc-player .sc-controls a.sc-pause:hover{
+  background: url('../css/sc-player-standard/img/play-green-hover.png');
+}
+
+.sc-player.playing .sc-controls a.sc-pause{
+  background: url('../css/sc-player-standard/img/pause-green.png');
+}
+
+.sc-player.playing .sc-controls a.sc-pause:hover{
+  background: url('../css/sc-player-standard/img/pause-green-hover.png');
+}  
+
+.sc-scrubber .sc-time-indicators{
+  background: black;
+  color: #fff;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 4px;
+}
+
+/* Track listings*/
+
+.sc-player ol.sc-trackslist  {
+  height: 100%;
+  background-color:none;
+  border:violet;
+
+}  
+.sc-player ol.sc-trackslist li {  
+  background: transparent;    
+  color: violet;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -webkit-transition: background 0.3s ease-in;
+  /*width: 800px;*/
+  height: 55px;
+  font-size: 21px;
+  border-bottom: 1px solid violet;
+}
+
+.sc-player ol.sc-trackslist li:hover {  
+  background: darkviolet;
+  color:black;    
+}
+
+.sc-player ol.sc-trackslist li.active{  
+  background: darkviolet;    
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+
+.sc-player ol.sc-trackslist li.active a {
+  color: black;
+}
+
+
+
+/* Track info*/
+
+.sc-player .sc-info{
+  background: black;
+  opacity: 0.9;
+  color: darkviolet;
+}
+
+.sc-player .sc-info a {
+  color: #fff;
+}
+
+.sc-player .sc-info-toggle{
+  background:violet;
+  color: black;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 4px;
+}
+
+.sc-player .sc-info-toggle:hover{
+  background: darkviolet;
+  color: black;
+}
+
+.sc-player .sc-info-close{
+  background: darkviolet;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 2px 4px;
+  font-weight: bold;
+}

@@ -1,0 +1,46 @@
+body,html{
+	color: violet;
+	background-color: black;
+	transition:all 1s linear;
+	height: 100%;
+	font-family: 'Wallpoet';
+	margin: 0;
+	padding: 0;
+
+}
+.whoare-container{
+	background-image: url(../images/video-static.gif);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.whoweare-content{
+	width:70%;
+	/*margin: 0 auto;*/
+	z-index: 95;
+	margin: 0 auto;
+ 	
+
+}
+
+ h2{
+   font-size: 29px;
+   padding-left:35%;
+}
+
+
+.whoweare-content p{
+	font-size: 24px;
+	background-color: rgba(0,0,0,0.5);
+	font-family: 'Special Elite', cursive;
+}
+.sendvic{
+	position: absolute;
+	top:20px;
+	right: 20px;
+}
+
+
+

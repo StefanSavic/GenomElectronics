@@ -1,0 +1,363 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	/*background-attachment: fixed;*/
+	overflow: hidden;
+	height: 100%; 
+	transition:all 1s linear;
+}
+
+
+.container{
+	background-image: url(../images/second-try.gif);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+/************TROUGAO ANIMACIJA*****************/
+
+.trougao1{
+    position: relative;
+	top:0px;
+	margin: 0 auto;
+    width: 610px;
+	height: 510px;
+	background-image: url(../images/triangle.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:top;
+	/*transform:rotate(180deg);*/
+	animation:myfirst 1s;
+	/*animation-delay: 3s;*/
+	/*border: 1px solid red;*/
+	z-index: 999;
+}
+
+.trougao2{
+	position: relative;
+	top:-527px;
+	margin: 0 auto;
+    width: 218px;
+	height: 355px;
+	background-image: url(../images/skezz.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*border: 1px solid green;*/
+	z-index: 998;
+	animation:treci-trougao 0.5s linear 1.5s;
+	display:none;
+}
+
+.trougao3{
+    position: relative;
+    margin: 0 auto;
+	top:-886px;
+    width: 218px;
+	height: 355px;
+	background-image: url(../images/jah.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*border: 1px solid green;*/
+	z-index: 998;
+	animation:drugi-trougao 0.5s linear 1s;
+	display: none;
+
+}
+@-webkit-keyframes myfirst{
+	0%{top:-610px;}
+	100%{top:0px;}
+}
+/***********************TROUGAO ANIMACIJA KRAJ***********************************************/
+
+/*                  MENU                                              */
+
+
+
+.okruglo{ 
+	box-shadow: 2px 2px 3px violet;
+	background: -moz-linear-gradient(left , rgba(223,23,214,0.2) , rgba(255,255,255,0.3)); 
+	background: -webkit-linear-gradient(left , rgba(223,23,214,0.2) , rgba(255,255,255,0.3));
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	border-opacity:0.4;
+	-webkit-transition-duration:1s;
+	-o-transition-duration:1s;
+	transition-duration:1s;
+	-webkit-animation-play-state:running;
+	
+	z-index: 2
+}
+.okruglo:hover{
+	background: -moz-linear-gradient(left , rgba(175,17,232,0.2) , rgba(2140,104,255,0.2)); 
+	background: -webkit-linear-gradient(left , rgba(175,17,232,0.2) , rgba(2140,104,255,0.2));
+	-webkit-animation-play-state: paused;
+}
+
+.okruglo h1{
+	text-shadow:2px 2px 2px violet;
+	font-size: 35px; 
+	font-family: 'Wallpoet';
+	text-decoration: none;
+		
+
+}
+
+.okruglo h1:hover{
+	color:violet;
+}
+
+
+
+#okruglo1{
+    
+    width:150px;
+	height:150px;
+	border-radius:75px;
+	top:5%;
+	left:-160px;
+	overflow:hidden;
+}
+	
+.floatwho{
+	-webkit-animation-name: floatwho;
+	-webkit-animation-duration:2s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 3.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:nomal;
+	-webkit-animation-play-state: running;
+
+}
+
+@-webkit-keyframes floatwho {
+	0%   {left:10%; top:5%;}
+	25%   {left:11%; top:5.5%;}
+	50%   {left:9%; top:5%;}
+	100% {left:10%; top:5%;}
+}
+#okruglo1:hover{
+	-webkit-animation-play-state: paused;
+}
+
+#okruglo1 h1{	
+	position: absolute;
+	left: 40px;
+    font-size: 29px
+}
+
+#okruglo2{
+	width: 280px;
+	height: 280px;
+	border-radius: 200px;
+	border: 2px solid rgba(223,23,214,0.2);
+	top:50%;
+	left: -300px;
+	overflow: hidden;
+	z-index:2;
+}
+	
+
+.floatmusic{
+	-webkit-transition-duration:1s;
+	-o-transition-duration:1s;
+	transition-duration:1s;
+	-webkit-animation-name: floatmusic;
+	-webkit-animation-duration:5s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-delay: 3.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:nomal;
+	-webkit-animation-play-state: running;
+}
+@-webkit-keyframes floatmusic {
+	0%{left:5%; top:50%;}
+	25%{left:6.5%; top:51.5%;}
+	50%{left:6%; top:51%;}
+	100%{left:5%; top:50%;}
+}
+
+
+#okruglo2 h1{	
+	position: absolute;
+	top:80px;
+	left: 75px;
+}
+
+
+/*pokusaj @mediaquery*/
+   @media only screen and (max-width: 1400px) {
+   #okruglo2{
+   	
+   	width: 200px;
+   	height: 200px;
+   	border-radius:100px;
+
+   }
+}
+
+
+
+#okruglo3{
+	width: 200px;
+	height: 200px;
+	top:15%;
+	right: -200px;
+}
+	
+
+
+
+.floatphotos{
+	-webkit-animation-name: floatphotos;
+	-webkit-animation-duration:2s;
+	-webkit-animation-timing-function: normal;
+	-webkit-animation-delay: 3.5s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:nomal;
+	-webkit-animation-play-state: running;
+}
+@-webkit-keyframes floatphotos {
+	0%   {right:10%; top:15%;}
+	25%   {right:10.5%; top:16.5%;}
+	50%   {right:10%; top:16%;}
+	100% {right:10%; top:15%;}
+}
+
+
+#okruglo3 h1{	
+	position: absolute;
+	top:45px;
+	left: 16px;
+    z-index: 2;
+}
+
+
+   
+
+
+#okruglo4{
+	width: 180px;
+	height:180px;
+	bottom:20%;
+	right: -200px;
+	/*z-index: 2*/
+}   
+
+
+.floatvideo{
+	-webkit-animation-name: floatvideo;
+	-webkit-animation-duration:2s;
+	-webkit-animation-timing-function:normal;
+	-webkit-animation-delay: 4s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:nomal;
+	-webkit-animation-play-state: running;
+}
+@-webkit-keyframes floatvideo{
+	0%   {right:10%; bottom:20%;}
+	25%   {right:10.5%; bottom:20.5%;}
+	50%  {right:10%; bottom:20.5%;}
+	100% {right:10%; bottom:20%;}
+}
+
+
+#okruglo4 h1{	
+	position: absolute;
+	top:40px;
+	left: 30px;
+}
+
+/*                 NEWS PROMTER                                                */
+
+
+
+
+
+#container{
+	position: absolute;
+	bottom: 8.5%;
+	left: 40%;
+	background-color: rgba(0,0,0,0.4);
+	width: 550px;
+	height: 25px;
+	border: 5px outset rgba(223,0,214,0.4);
+	overflow: hidden;
+	z-index: 0;
+
+}
+
+#animate{
+	width: 1200px;
+	height: 30px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	-webkit-animation-name: news;
+	-webkit-animation-duration:26s;
+	-webkit-animation-timing-function: linear;
+	/*-webkit-animation-delay: 0s;*/
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction:reverse;
+	-webkit-animation-play-state: running;
+
+}
+
+#news{
+	margin: 0;
+	position: relative;
+	top: 0px;
+	left: 200px;
+	font-size:24px;
+	font-family: 'Wallpoet';
+	color: aqua;
+	text-transform: uppercase;
+
+}
+
+
+@-webkit-keyframes news {
+	0%{left:-1500px; top:0px;}
+	100%{left:500px; top:0px;}
+
+}
+
+@-webkit-keyframes news1 {
+	0%{left:-350px; top:0px;}
+	100%{left:110%; top:0px;}
+
+}
+
+
+
+/*footer*/
+   #animate2{
+	-webkit-animation-name: news1;
+	-webkit-animation-duration:26s;
+	-webkit-animation-timing-function: linear;
+	/*-webkit-animation-delay: 0s;*/
+	-webkit-animation-iteration-count: infinite;
+
+	-webkit-animation-play-state: running;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	/*border:1px solid violet;*/
+	width: 100%;
+	height: 50px;
+	
+}
+
+footer h1{
+	position: relative;
+	color: violet;
+	font:20px 'Wallpoet';
+	margin-bottom: 10px;
+}
+
+
+

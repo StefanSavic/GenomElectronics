@@ -1,0 +1,25 @@
+	body,html{
+
+		background-color: black;
+		/*transition:all 1s linear;*/
+		height: 100%;
+		overflow: hidden;
+		margin:0;
+		padding:0;
+		font-family: 'Wallpoet';
+		
+		
+	}
+
+	.back{
+		color:violet;
+		font-size: 25px;
+	}
+	.music-container{
+		margin: 0;	
+		width: 100%;
+		height: 100%;
+	    background-image: url(../images/Studio-Equipment1.JPG);
+		background-repeat:no-repeat;
+		background-size: cover;
+	}
